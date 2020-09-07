@@ -1,4 +1,6 @@
 :root {
+    --background-primary: #282a36;
+    --background-secondary: #44475a;
     --font-size-normal: 18px;
     --font-size-code: 15px;
     --font-size-title: 26px;
@@ -6,38 +8,149 @@
     --font-size-h2: 21px;
     --font-size-h3: 20px;
     --font-family-body: Avenir, Avenir Next, sans-serif;
-    --background-color: #282a36;
+    --text-normal: #f8f8f2;
+    --text-accent: #ffb86c;
+    --text-accent-hover: #8be9fd;
+    --document-title: #ff79c6;
     --header-h1: #bd96f9;
     --header-h2: #ff5555;
     --header-h3: #ffb86c;
-
-
+    --blocks: #44475a;
+    --block-border: #ffb86c;
 }
 
-#main #content #document-sidebar {
-    background-color: ;
-}
-
-/*-----------------------------------*/
-/*              SIDEBAR              */
-/*-----------------------------------*/
-
-/*-----------------------------------*/
-/*                BODY               */
-/*-----------------------------------*/
+/* Global */
 body {
     line-height: 1.45 !important;
-	background-color: var(--bgcol);
+	background-color: var(--background-primary);
 	height: 100%;
 	margin: 0;
-	font-family: var(--font-family-body)
-	-webkit-font-smoothing: auto;
+    font-family: var(--font-family-body);
 	font-size: 12px;
 }
 
+/* Queue */
+
+.queue-container {
+	.queue {
+		.queue__title {
+			.queueBadge {
+			}
+		}
+	}
+} 
+
+/* Hierarchy Editor */
+
+#hierarchy-editor {
+    /* Bullets */
+		.rem-bullet__container {
+			.rem-bullet {
+			}
+		}
+
+    /* Editor */
+		.rem-text {
+		}
+
+    /* Portals */
+		.portal-rem {
+			.portal-rem-top {
+			}
+		}
+
+    /* Reference and Tag Sections */
+		#hierarchy-editor-references {
+		}
+		#hierarchy_editor__tag-bar {
+			#hierarchy-editor__tag-bar__tag {
+				#hierarchy-editor__tag-bar__tag__delete {
+				}
+			}
+		}
+
+    /* Bottom Toolbar */
+		.hierarchy-editor-toolbar {
+		}
+}
+
+/* Rem-Level Formatting */
 .rem-header--1 {
     font-size: var(--font-size-h1);
     font-weight: 500;
     color: var(--header-h1);
+    }
+}
+.rem-header--2 {
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    color: var(--header-h2);
+}
+.rem-header--3 {
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+    color: var(--header-h3);
 }
 
+/* Text-Level Formatting */
+.rem-reference {
+    }
+    
+.rem-reference-link {
+    color: var(--text-accent);
+    border:thin solid transparent
+    }
+    
+.rem-reference-link:hover {
+    background-color: var(--text-accent-hover);
+    }
+}
+.quote {
+    background-color: var(--blocks);
+    border: 0px solid;
+    border-color: var(--block-border);
+    border-left-width: 4px;
+    border-radius: 0 8px 8px 0;
+    margin: 0 10px;
+}
+.cloze {
+}
+
+.highlight-color--red {
+}
+.highlight-color--yellow {
+}
+.highlight-color--orange {
+}
+.highlight-color--green {
+}
+.highlight-color--purple {
+}
+
+.work-in-progress-rem {
+}
+.work-in-progress-tag {
+}
+
+/* Documents */
+.document {
+	#document-parents {
+	}
+}
+
+/* Document Sidebar */
+#document-sidebar {
+    background-color: var(--background-secondary);
+    /*
+    .document-sidebar_top {
+		.document-sidebar_top__logo-and-user {
+		}
+	}
+		.document-list-item__container {
+			.document-list-item {
+			}
+		}
+	.document-sidebar__buttons {
+    }
+    */
+}
