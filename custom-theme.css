@@ -1,43 +1,51 @@
-:root {
-    --font-size-normal: 18px;
-    --font-size-code: 15px;
-    --font-size-title: 26px;
-    --font-size-h1: 25px;
-    --font-size-h2: 21px;
-    --font-size-h3: 20px;
-    --font-family-body: Avenir, Avenir Next, sans-serif;
-    --background-color: #282a36;
-    --header-h1: #bd96f9;
-    --header-h2: #ff5555;
-    --header-h3: #ffb86c;
-
-
-}
-
-#main #content #document-sidebar {
-    background-color: ;
-}
-
-/*-----------------------------------*/
-/*              SIDEBAR              */
-/*-----------------------------------*/
-
-/*-----------------------------------*/
-/*                BODY               */
-/*-----------------------------------*/
 body {
-    line-height: 1.45 !important;
-	background-color: var(--bgcol);
-	height: 100%;
-	margin: 0;
-	font-family: var(--font-family-body)
-	-webkit-font-smoothing: auto;
-	font-size: 12px;
+	font-family: Avenir, Avenir Next, sans-serif !important;
+}
+
+.rem-text {
+	font-size: 18px;
+	line-height: 1.6;
 }
 
 .rem-header--1 {
-    font-size: var(--font-size-h1);
-    font-weight: 500;
-    color: var(--header-h1);
+	font-size: 25px;
+	color: #bd93f9;
+}
+.rem-header--2 {
+	color: #ff5555;
+	font-size: 21px;
+}
+.rem-header--3 {
+	font-size: 20px;
+	color: #ffb86c;
 }
 
+.highlight-color--red {
+	background-color: unset;
+	background-image: linear-gradient(transparent 60%, red, transparent);
+}
+.highlight-color--yellow {
+    background-color: unset;
+	background-image: linear-gradient(transparent 50%, yellow);
+}
+.highlight-color--orange {
+    background-color: unset;
+	background-image: linear-gradient(transparent 50%, orange);
+}
+.highlight-color--green {
+    background-color: unset;
+	background-image: linear-gradient(transparent 50%, green);
+}
+.highlight-color--purple {
+    background-color: unset;
+	background-image: linear-gradient(transparent,70%, purple);
+}
+.highlight-color--purple {
+    background-color: unset;
+	background-image: linear-gradient(transparent 50%, purple);
+}
+
+.highlight-color--blue {
+	background-color: unset;
+	background-image: linear-gradient(transparent 50%, blue);
+	}

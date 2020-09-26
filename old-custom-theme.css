@@ -1,0 +1,43 @@
+:root {
+    --font-size-normal: 18px;
+    --font-size-code: 15px;
+    --font-size-title: 26px;
+    --font-size-h1: 25px;
+    --font-size-h2: 21px;
+    --font-size-h3: 20px;
+    --font-family-body: Avenir, Avenir Next, sans-serif;
+    --background-color: #282a36;
+    --header-h1: #bd96f9;
+    --header-h2: #ff5555;
+    --header-h3: #ffb86c;
+
+
+}
+
+#main #content #document-sidebar {
+    background-color: ;
+}
+
+/*-----------------------------------*/
+/*              SIDEBAR              */
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/*                BODY               */
+/*-----------------------------------*/
+body {
+    line-height: 1.45 !important;
+	background-color: var(--bgcol);
+	height: 100%;
+	margin: 0;
+	font-family: var(--font-family-body)
+	-webkit-font-smoothing: auto;
+	font-size: 12px;
+}
+
+.rem-header--1 {
+    font-size: var(--font-size-h1);
+    font-weight: 500;
+    color: var(--header-h1);
+}
+
