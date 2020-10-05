@@ -4,8 +4,13 @@ body {
 	background-color: #282a36;
 }
 
+#document {
+	background-color: #282a36;
+}
+
 .document__top-bar {
 	color: #ff79c6;
+	
 }
 
 .rem-text {
@@ -15,16 +20,20 @@ body {
 
 .rem-header--1 {
 	font-size: 25px;
-	color: #9A48FF;
+	font-weight: 400;
+	color: #bd93f9;
+	background-color: unset;
 }
 
 .rem-header--2 {
 	color: #FF880A;
 	font-size: 21px;
+	font-weight: 500;
 }
 
 .rem-header--3 {
 	font-size: 20px;
+	font-weight: 500;
 	color: #FFB70A;
 }
 
@@ -48,32 +57,32 @@ body {
 
 .highlight-color--red {
 	background-color: unset;
-	background-image: linear-gradient(transparent 70%, red, transparent);
+	background-image: linear-gradient(transparent 70%, #ff0557, transparent);
 }
 
 .highlight-color--yellow {
 	background-color: unset;
-	background-image: linear-gradient(transparent 70%, yellow, transparent);
+	background-image: linear-gradient(transparent 70%, #ffb70a, transparent);
 }
 
 .highlight-color--orange {
 	background-color: unset;
-	background-image: linear-gradient(transparent 70%, orange, transparent);
+	background-image: linear-gradient(transparent 70%, #ff880a, transparent);
 }
 
 .highlight-color--green {
 	background-color: unset;
-	background-image: linear-gradient(transparent 70%, green, transparent);
+	background-image: linear-gradient(transparent 70%, #64ea54, transparent);
 }
 
 .highlight-color--purple {
 	background-color: unset;
-	background-image: linear-gradient(transparent 70%, purple, transparent);
+	background-image: linear-gradient(transparent 70%, #9a48ff, transparent);
 }
 
 .highlight-color--blue {
 	background-color: unset;
-	background-image: linear-gradient(transparent 70%, blue, transparent);
+	background-image: linear-gradient(transparent 70%, #00c3fc, transparent);
 }
 
 #code-node {
@@ -82,7 +91,11 @@ body {
 
 .quote {
 	background-color: #44475a;
-	border-left: 5px solid #ffb86c;  
+	border-left: 3px solid #ffb86c;  
+	padding: 0.3em 1em 0.3em 1em;
+	font-family: 'Lora', serif;
+	font-style: italic;
+	display: block;
 }
 
 .bold {
